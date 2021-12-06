@@ -7,9 +7,9 @@ media_folder: static/uploads
 public_folder: /uploads
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "static/posts"
+  - name: "blog-post"
+    label: "Blog Post"
+    folder: "content/posts"
     create: true
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
