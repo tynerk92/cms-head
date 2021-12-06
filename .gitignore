@@ -1,9 +1,0 @@
-.DS_Store
-node_modules
-/public
-/.svelte-kit
-/package
-.env
-.env.*
-.netlify
-/src/lib/data
