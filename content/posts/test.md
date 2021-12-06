@@ -2,4 +2,8 @@
 slug: test
 title: Test
 ---
-Testing
+# Testing
+
+```shell
+npm i svelte
+```
