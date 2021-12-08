@@ -17,7 +17,8 @@ const config = {
     external: [
       '/testing.md?raw'
     ]
-  }
+  },
+  ssr: true
 };
 
 export default config;
