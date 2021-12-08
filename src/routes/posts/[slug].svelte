@@ -1,24 +1,23 @@
 <script context="module">
-  export async function load({ page, fetch }) {
-    const resourceURL = `/api/posts-${page.params.slug}`
-    console.log("Requesting resource: ", resourceURL)
-    const res = await fetch(resourceURL)
-    console.log("Response: ", res)
-    const data = await res.json()
-    console.log("Data: ", data)
+  import { base } from '$app/paths'
 
-    if (res.ok) {
-      return {
-        props: {
-          article: data.default
-        }
+  export async function load({ page, fetch }) {
+    const slug = page.params.slug
+    const post = await fetch(`${base}/api/${slug}.json`).then(r => r.json())
+
+    return {
+      props: {
+        post: post
       }
     }
   }
 </script>
 
 <script>
-  export let article
+  import SvelteMarkdown from 'svelte-markdown'
+  export let post
+
+  $: console.log(post)
 </script>
 
-<pre>{article}</pre>
+<SvelteMarkdown source={post} />
