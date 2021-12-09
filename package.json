@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build && ls -al .netlify/functions-internal && ls -al /opt/build/repo/functions",
+    "build": "svelte-kit build && ls -al .netlify/functions-internal && ls -al /opt/build/repo/functions/posts && cat /opt/build/repo/functions/posts/testing.md",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
