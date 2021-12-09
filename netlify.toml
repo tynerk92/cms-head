@@ -4,4 +4,4 @@
   command = "npm run build"
 
 [functions.test]
-  included_files = ["_posts/**.md"]
+  included_files = ["posts/**.md"]
