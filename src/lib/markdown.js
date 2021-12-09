@@ -4,7 +4,7 @@ export async function process(filename) {
   const METADATA_REGEX = /---((.|\r\n)*)---/g
   const METADATA_TAGS_REGEX = /---(\r\n)?/g
 
-  const files = fs.readdirSync('.')
+  const files = fs.readdirSync('..')
   console.log(files)
 
   const md = fs.readFileSync(files.join(', '))
