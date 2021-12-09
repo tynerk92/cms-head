@@ -2,8 +2,9 @@
 
   export async function load({ page, fetch }) {
     const slug = page.params.slug
+    console.log("Running load in ", slug, " load function")
     // const post = await fetch(`${base}/api/${slug}.json`).then(r => r.json())
-    const post = await fetch(`/.netlify/functions/get-post?slug=${slug}`).then(r => r.json())
+    const post = await fetch(`/.netlify/functions/test?slug=${slug}`).then(r => r.json())
 
     return {
       props: {

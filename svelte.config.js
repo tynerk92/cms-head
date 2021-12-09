@@ -13,11 +13,6 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	},
-  rollupOptions: {
-    external: [
-      '/testing.md?raw'
-    ]
-  },
   ssr: true
 };
 

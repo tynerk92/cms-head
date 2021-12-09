@@ -3,5 +3,5 @@
   publish = "dist"
   command = "npm run build"
 
-[functions.get-post]
+[functions.test]
   included_files = ["_posts/**.md"]
